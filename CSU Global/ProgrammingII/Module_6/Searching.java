@@ -2,7 +2,6 @@
 // February 20, 2025
 // Searching.java
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Searching {

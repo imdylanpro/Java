@@ -36,6 +36,6 @@ public class Student {
     }
 
     public void setAddress(String inputAddress) {
-        this.address = address;
+        this.address = inputAddress;
     }
 }
