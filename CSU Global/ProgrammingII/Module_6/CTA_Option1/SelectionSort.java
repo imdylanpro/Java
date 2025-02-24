@@ -2,11 +2,6 @@
 // February 22, 2025
 // SelectionSort.java
 
-/* This file takes in an array of Student object type and a Comparator of Student object type and sorts them. 
- * The method will then call the compare method associated with the input comparator to sort the list of Students
- * by either the roll number or name (Dependant upon which comparator was provided to the method.)
- */
-
 import java.util.ArrayList;
 import java.util.Comparator;
 

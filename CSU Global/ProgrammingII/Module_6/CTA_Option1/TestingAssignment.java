@@ -2,12 +2,6 @@
 // February 22, 2025
 // TestingAssignment.java
 
-/* This file will test the functionality of SelectionSort.java, RollNoComparator.java, NameComparator.java, and Student.Java.
- * 10 objects are created of type Student, then they are printed out in the ordert they were stored into the studentArray.
- * Next the array of 10 student  objects is sorted by their roll number using the RollNoComparator.java and SelectionSort.java
- * classes. 
- */
-
 import java.util.ArrayList;
 
 public class TestingAssignment {
@@ -24,7 +18,8 @@ public class TestingAssignment {
         RollNoComparator rollNoCompare = new RollNoComparator();
         NameComparator nameCompare = new NameComparator();
 
-        // Create the students with individual attributes for rollno, name, and address.
+        // Create the students with individual attributes for rollno, name, and
+        //  address.
         studentArray.add(student1 = new Student(1, "Dylan", "123 Street"));
         studentArray.add(student2 = new Student(3, "Mark", "456 Lane"));
         studentArray.add(student3 = new Student(5, "James", "789 Drive"));
