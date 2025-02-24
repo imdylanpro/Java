@@ -8,10 +8,15 @@ public class TestingAssignment {
     public static void main(String[] args) {
         // Create the variables that will be used for the student objects.
         Student student1, student2, student3, student4, student5, student6, 
-        student7, student8, student9, student10, student11;
+        student7, student8, student9, student10;
         
         // Create the array list that will house the student objects.
         ArrayList<Student> studentArray = new ArrayList<>();
+
+        // Create variables that cane allow us to enact the methods created from the other classes.
+        SelectionSort selectionShorter = new SelectionSort();
+        RollNoComparator rollNoCompare = new RollNoComparator();
+        NameComparator nameCompare = new NameComparator();
 
         // Create the students with individual attributes for rollno, name, and
         //  address.
@@ -25,16 +30,33 @@ public class TestingAssignment {
         studentArray.add(student8 = new Student(10, "Ian", "434 Peninsula"));
         studentArray.add(student9 = new Student(4, "Devon", "964 Archipeligo"));
         studentArray.add(student10 = new Student(9, "Emy", "523 Cape"));
-        studentArray.add(student11 = new Student(11, "Polo", "456 Candy Ln"));
 
         // For each element present in the studentArray print out the rollno, 
         //  name, and address.
+        System.out.println("Original List");
         for (Student student: studentArray) {
-            System.out.println("-----");
-            System.out.println("Name: " + student.getName());
-            System.out.println("Roll no: " + student.getRollNo());
-            System.out.println("Address: " + student.getAddress());
-            System.out.println("-----");
+            System.out.print("Name: " + student.getName());
+            System.out.print(" | Roll No: " + student.getRollNo());
+            System.out.println(" | Address: " + student.getAddress());
+        }
+
+        // Prints out the list sorted by roll number, passing in the studentArray and rollNoCompare.
+        System.out.println("Student list sorted by roll number.");
+        studentArray = selectionShorter.selectionSorter(studentArray, rollNoCompare);
+        for (Student student: studentArray) {
+            System.out.print("Name: " + student.getName());
+            System.out.print(" | Roll No: " + student.getRollNo());
+            System.out.println(" | Address: " + student.getAddress());
+        }
+
+        // Prints out the list sorted by name, passing in the studentArray and the nameCompare.
+        System.out.println("Student list sorted by name.");
+        ArrayList<Student> namesortedArray = selectionShorter.selectionSorter(studentArray, nameCompare);
+        for (Student student: namesortedArray) {
+            System.out.print("Name: " + student.getName());
+            System.out.print(" | Roll No: " + student.getRollNo());
+            System.out.println(" | Address: " + student.getAddress());
+
         }
     }
 }
