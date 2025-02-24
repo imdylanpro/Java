@@ -2,6 +2,11 @@
 // February 22, 2025
 // Student.java
 
+/* Creates a class of type Student that will allow for rollno, name, and address attributes to be created.
+ * The Student class will have getter and setter methods for the attributes. This student class will be used in
+ * conjunction with TestingAssignment.java, SelectionSort.java, RollNoComparator.java, and nameComparator.java.
+ */
+
 public class Student {
     private int rollNo;
     private String name;

@@ -2,6 +2,10 @@
 // February 23, 2025
 // RollNoComparator.java
 
+/* This class will compare two Student objects attributes of rollno and return either a positive integer
+ * or negative integer depending on if one is greater than the other; this is used to compare the objects.
+ */
+
 import java.util.Comparator;
 
 public class RollNoComparator implements Comparator<Student> {
