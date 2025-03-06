@@ -14,7 +14,7 @@ public class StudentLinkedListBuilder {
         
         String studentName;
         String studentAddress;
-        double studentGPA;
+        double studentGPA = 0;
         
         // While loop for the program. Will gather information about students.
         while (promptAnswer.equals("Y")) {
@@ -24,9 +24,21 @@ public class StudentLinkedListBuilder {
             studentName = myScanner.nextLine();
             System.out.print("What is the address of this student? ");
             studentAddress = myScanner.nextLine();
-            System.out.print("What is the student's GPA? ");
-            studentGPA = myScanner.nextDouble();
-
+            // In order to validate the user provided a double for the GPA we must use a 
+            //  try catch and while loop.
+            while (true) {
+                try {
+                    System.out.print("What is the student's GPA? (Must be a number) ");
+                    studentGPA = myScanner.nextDouble();
+                    break;
+                } catch (Exception e) {
+                    System.out.println("You must enter a number.");
+                    // This is a Scanner next line that clears the buffer of a new line
+                    //  that was generated.
+                    myScanner.nextLine();
+                    
+                }
+            }
             // Here is where the student object is created./
             Student myStudent = new Student(studentName, studentAddress, 
             studentGPA);
