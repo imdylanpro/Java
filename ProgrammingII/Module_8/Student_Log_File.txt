@@ -1,0 +1,5 @@
+Student 1:      | Name: Amanda      | Address: 123 Terry Ct                 | GPA: 3.2    
+Student 2:      | Name: Briana      | Address: 43 Candy Ln                  | GPA: 4.0    
+Student 3:      | Name: Dylan       | Address: 123 Biscuit Blvd             | GPA: 4.0    
+Student 4:      | Name: Fred        | Address: 98 Frontier Drive            | GPA: 3.3    
+Student 5:      | Name: Zachary     | Address: 78 Brandon Street            | GPA: 2.2    
